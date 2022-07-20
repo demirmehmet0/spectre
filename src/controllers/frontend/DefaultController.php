@@ -1,6 +1,6 @@
 <?php
 
-namespace portalium\template\controllers\frontend;
+namespace diginova\spectre\controllers\frontend;
 
 use portalium\web\Controller as WebController;
 

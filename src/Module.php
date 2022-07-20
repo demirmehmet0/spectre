@@ -1,6 +1,6 @@
 <?php
 
-namespace portalium\template;
+namespace diginova\spectre;
 
 class Module extends \portalium\base\Module
 {
@@ -8,20 +8,20 @@ class Module extends \portalium\base\Module
         [
             'class' => 'yii\rest\UrlRule',
             'controller' => [
-                'template/default',
+                'spectre/default',
             ]
         ],
     ];
     
     public static function moduleInit()
     {
-        self::registerTranslation('template','@portalium/template/messages',[
-            'template' => 'template.php',
+        self::registerTranslation('spectre','@diginova/spectre/messages',[
+            'spectre' => 'spectre.php',
         ]);
     }
 
     public static function t($message, array $params = [])
     {
-        return parent::coreT('template', $message, $params);
+        return parent::coreT('spectre', $message, $params);
     }
 }
